@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box; 
+   
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background: white;
+    font-family: 'poppins', sans-serif;
+    border: 2px solid black;
+    background-color: white;
+
+
+}
+
+.top-bar {
+    background-color: gray;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0  auto;
+    box-sizing: border-box;
+    
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #000000;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Enlarge the logo slightly on hover */
+}
+h1 {
+    margin: 0 auto;
+    color: #333; 
+    font-size:50px; 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); 
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #6d1818;
+    border-radius: 4px;
+  
+    
+}
+
+button {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+   
+}
+
+.wrapper {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emergency-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+button:hover {
+    background-color: black;
+}
+
+.emergency-images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+   
+}
+
+.emergency-images-grid {
+    display: table;
+    border-spacing: 20px; /* Largësia midis kolonave (ngushtoni këtë vlerë sipas preferencave tuaja) */
+    margin-top: 20px;
+}
+
+.emergency-images-grid img {
+    width: 100%;
+    max-width: 300px; /* Vlera e cila ju pershtatet për madhësi të ngjashme */
+    max-height: 150px; /* Vlera e cila ju pershtatet për lartësi të barabartë */
+    border: 1px solid #111010;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efekti i hijes */
+    transition: transform 0.3s ease;
+
+}
+
+.emergency-images-grid img:hover {
+    transform: scale(1.1); /* Zmadhojeni e fotos në hover */
+}
+.container {
+   background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+#mapToggle{
+font-size: 25px;
+font-weight: bold;
+color: black;
+
+
+}
+#map {
+    width: 40%; 
+    height: 300px;
+    border: none; 
+    margin-top: 20px;
+    margin: auto; 
+    
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.emergency-contact-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.emergency-item {
+    margin-bottom: 10px;
+}
+
+/* Style for footer contact buttons*/
+.emergency-contact-footer button {
+    font-size: 16px;
+    background-color:red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+button:hover {
+    background-color: #333;
+}
+
+/* Social Share styling */
+.social-share {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 24px;
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color:blue;
+}
+
+/* Camera Section styling */
+.camera-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.camera-section h2 {
+    font-size: 24px;
+}
+
+#cameraInput {
+    display: inline-block;
+}
+
+#selectedImage {
+    margin-top: 10px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
